@@ -2,7 +2,6 @@
 
 An informative app about Antarctica that invites people to book a trip
 
-
 ## Database
 
 contact_form: first_name, last_name, email, phone_number, subject, description
@@ -13,6 +12,7 @@ trip: trip_title, trip_description, trip_dates, travelers (ref: traveler id)
 
 traveler: first_name, last_name, email, phone_number, date_of_birth, address, passport_number, special_notes.
 
+subscriber: first_name, last_name, email
 
 ## graphQL
 
@@ -25,7 +25,6 @@ traveler: first_name, last_name, email, phone_number, date_of_birth, address, pa
 - Bootstrap template
 - React-router
 - context-api
-
 
 ## back End Technologies
 
