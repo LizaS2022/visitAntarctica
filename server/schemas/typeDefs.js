@@ -3,9 +3,9 @@ const { gql } = require("apollo-server-express");
 const typeDefs = gql`
   type Trip {
     id: ID!
+    image: String
     title: String!
-    start_date_trip: String
-    end_date_trip: String
+    trip_duration: Int
     trip_description: String!
     max_voyagers: Int
   }
@@ -19,7 +19,6 @@ const typeDefs = gql`
     first_name: String!
     last_name: String!
     email: String!
-    phone_number: String!
     message_title: String!
     message: String!
   }
@@ -48,9 +47,9 @@ const typeDefs = gql`
   }
 
   input TripInput {
+    image: String
     title: String!
-    start_date_trip: String
-    end_date_trip: String
+    trip_duration: Int
     trip_description: String
     max_voyagers: Int
   }
@@ -59,7 +58,6 @@ const typeDefs = gql`
     first_name: String!
     last_name: String!
     email: String!
-    phone_number: String!
     message_title: String!
     message: String!
   }

@@ -1448,6 +1448,11 @@ footer
   padding-right: 30px;
 }
 
+/* sections */
+section {
+  margin-bottom: 3rem;
+}
+
 @media (max-width: 575px) {
   .subscribe-footer .btn {
     margin-top: 10px;
@@ -1474,3 +1479,4 @@ footer
     padding-left: 0px;
   }
 }
+

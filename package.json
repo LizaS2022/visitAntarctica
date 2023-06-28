@@ -18,5 +18,9 @@
   "devDependencies": {
     "concurrently": "^8.2.0",
     "nodemon": "^1.14.9"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.16",
+    "graphql": "^16.7.1"
   }
 }

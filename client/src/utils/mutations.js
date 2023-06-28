@@ -3,10 +3,10 @@ import { gql } from "@apollo/client";
 export const ADD_TRIP = gql`
   mutation Mutation($input: TripInput) {
     addTrip(input: $input) {
-      end_date_trip
       id
+      image
       max_voyagers
-      start_date_trip
+      trip_duration
       title
       trip_description
     }
@@ -16,10 +16,10 @@ export const ADD_TRIP = gql`
 export const UPDATE_TRIP = gql`
   mutation updateTrip($tripId: ID!, $input: TripInput) {
     updateTrip(tripId: $tripId, input: $input) {
-      end_date_trip
       id
+      image
       max_voyagers
-      start_date_trip
+      trip_duration
       title
       trip_description
     }
@@ -29,9 +29,9 @@ export const UPDATE_TRIP = gql`
 export const DELETE_TRIP = gql`
   mutation deleteTrip($tripId: ID) {
     deleteTrip(tripId: $tripId) {
-      end_date_trip
+      image
       max_voyagers
-      start_date_trip
+      trip_duration
       title
       trip_description
       id
@@ -60,13 +60,12 @@ export const DELETE_SUBSCRIBER = gql`
 export const ADD_INQUIRER = gql`
   mutation addInquirer($input: InquirerInput) {
     addInquirer(input: $input) {
-      email
       first_name
-      id
       last_name
-      message
+      email
+      id
       message_title
-      phone_number
+      message
     }
   }
 `;

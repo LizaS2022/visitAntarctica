@@ -1,6 +1,4 @@
-const mongoose = require("mongoose");
-
-const { Schema, model } = mongoose;
+const { Schema, model } = require("mongoose");
 
 const InquirySchema = new Schema({
   first_name: {
@@ -18,10 +16,6 @@ const InquirySchema = new Schema({
     required: true,
     unique: true,
     match: [/.+@.+\..+/, "Must match an email address!"],
-  },
-
-  phone_number: {
-    type: String,
   },
 
   message_title: {

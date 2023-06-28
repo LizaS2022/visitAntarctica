@@ -3,16 +3,17 @@ const mongoose = require("mongoose");
 const { Schema, model } = mongoose;
 
 const TripSchema = new Schema({
+  image: {
+    type: String,
+  },
+
   title: {
     type: String,
     required: true,
     trim: true,
   },
-  start_date_trip: {
-    type: Date,
-  },
-  end_date_trip: {
-    type: Date,
+  trip_duration: {
+    type: Number,
   },
 
   trip_description: {

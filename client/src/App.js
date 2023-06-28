@@ -8,7 +8,8 @@ import {
 } from "@apollo/client";
 
 import Main from "./components/Main";
-
+import InquirerForm from "./components/inquiryForm/InquiryForm";
+import Tour from "./components/tour/Tour";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const httpLink = createHttpLink({
@@ -26,6 +27,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/tour" element={<Tour />} />
+          <Route path="/contact" element={<InquirerForm />} />
         </Routes>
       </Router>
     </ApolloProvider>
