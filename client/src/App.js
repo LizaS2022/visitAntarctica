@@ -10,6 +10,7 @@ import {
 import Main from "./components/Main";
 import InquirerForm from "./components/inquiryForm/InquiryForm";
 import Tour from "./components/tour/Tour";
+import Video from "./components/Videos/Video";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const httpLink = createHttpLink({
@@ -28,6 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/tour" element={<Tour />} />
+          <Route path="/video" element={<Video />} />
           <Route path="/contact" element={<InquirerForm />} />
         </Routes>
       </Router>

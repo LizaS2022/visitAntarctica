@@ -3,7 +3,6 @@ const { gql } = require("apollo-server-express");
 const typeDefs = gql`
   type Trip {
     id: ID!
-    image: String
     title: String!
     trip_duration: Int
     trip_description: String!
@@ -43,11 +42,10 @@ const typeDefs = gql`
   }
 
   input SubscriberInput {
-    email: String!
+    email: String
   }
 
   input TripInput {
-    image: String
     title: String!
     trip_duration: Int
     trip_description: String

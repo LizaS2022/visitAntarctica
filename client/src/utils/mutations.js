@@ -4,7 +4,6 @@ export const ADD_TRIP = gql`
   mutation Mutation($input: TripInput) {
     addTrip(input: $input) {
       id
-      image
       max_voyagers
       trip_duration
       title
@@ -17,7 +16,6 @@ export const UPDATE_TRIP = gql`
   mutation updateTrip($tripId: ID!, $input: TripInput) {
     updateTrip(tripId: $tripId, input: $input) {
       id
-      image
       max_voyagers
       trip_duration
       title
@@ -29,7 +27,6 @@ export const UPDATE_TRIP = gql`
 export const DELETE_TRIP = gql`
   mutation deleteTrip($tripId: ID) {
     deleteTrip(tripId: $tripId) {
-      image
       max_voyagers
       trip_duration
       title

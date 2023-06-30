@@ -3,42 +3,63 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <header>
-      <nav className="navbar navbar-expand-lg navigation" id="navbar">
-        <div className="container">
-          <div className="navbar-brand">
-            <i className="icofont-support-faq mr-2 " />
-            Antarctia Tours
+    <section>
+      <header>
+        <nav className="navbar navbar-nav ms-auto navbar-expand-lg bs-gray-500 bg-light">
+          <div className="container">
+            <Link
+              className="navbar-brand"
+              style={{
+                fontFamily: "Brush Script MT",
+                fontSize: "2em",
+                color: "#ce8460",
+              }}
+              to="/"
+            >
+              <i className="mr-2 " />
+              VisitToAntarctica
+            </Link>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon" />
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav" style={{ marginLeft: "auto" }}>
+                {" "}
+                {/* The class 'ml-auto' pushes the ul to the right side */}
+                <li className="nav-item active">
+                  <Link className="nav-link" to="/">
+                    Home
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/about">
+                    About
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/trips">
+                    Trips
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/contact">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
-          <button
-            className="navbar-toggler collapsed"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarmain"
-            aria-controls="navbarmain"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="icofont-navigation-menu" />
-          </button>
-          <div
-            className="collapse navbar-collapse d-flex justify-content-between"
-            id="navbarmain"
-          >
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item active">
-                <Link to="/" className="nav-link">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item nav-link">About</li>
-              <li className="nav-item nav-link">Trips</li>
-              <li className="nav-item nav-link">Contact</li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
+    </section>
   );
 };
 

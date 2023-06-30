@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useQuery } from "@apollo/client";
 import { useNavigate } from "react-router-dom";
 import { VIEW_TRIPS } from "../../utils/queries";
@@ -7,10 +7,34 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import "./tour.css";
+import boat from "../../images/boat.jpg";
+import crossing from "../../images/crossing.jpg";
+import epic from "../../images/epic.jpg";
 
-import boat from "../../images/iceberg.jpg";
-import crossing from "../../images/iceberg.jpg";
-import epic from "../../images/iceberg.jpg";
+const images = [boat, crossing, epic];
+
+const ReadMore = ({ children, maxCharacterCount = 100 }) => {
+  const text = children;
+  const [isTrunctated, setIsTruncated] = useState(true);
+  const resultString = isTrunctated ? text.slice(0, maxCharacterCount) : text;
+
+  function toggleIsTruncated() {
+    setIsTruncated(!isTrunctated);
+  }
+
+  return (
+    <p>
+      {resultString}
+      <span
+        onClick={toggleIsTruncated}
+        style={{ color: "blue", cursor: "pointer" }}
+      >
+        {isTrunctated ? "... Read more" : " Show less"}
+      </span>
+    </p>
+  );
+};
 
 const Tours = () => {
   const { loading, data } = useQuery(VIEW_TRIPS);
@@ -28,23 +52,25 @@ const Tours = () => {
               <Col key={index}>
                 <Card
                   className="mx-auto"
-                  style={{ width: "18rem", height: "40rem" }}
+                  style={{ width: "18rem", minHeight: "40rem" }}
                 >
-                  <Card.Img variant="top" src="{`{trip.image}`}" />
+                  <Card.Img
+                    className="card-img"
+                    variant="top"
+                    src={images[index]}
+                  />
                   <Card.Body>
                     <div className="d-flex justify-content-between">
                       <Card.Title>{trip.title}</Card.Title>
                       <span>{trip.trip_duration} days</span>
                     </div>
-                    <Card.Text>{trip.trip_description}</Card.Text>
+                    <Card.Text>
+                      <ReadMore maxCharacterCount={100}>
+                        {trip.trip_description}
+                      </ReadMore>
+                    </Card.Text>
                     <div className="d-flex justify-content-between">
                       <Button variant="primary">Book Now</Button>
-                      <Card.Link
-                        style={{ textDecoration: "underline" }}
-                        href="#"
-                      >
-                        Read More
-                      </Card.Link>
                     </div>
                   </Card.Body>
                 </Card>
@@ -58,4 +84,4 @@ const Tours = () => {
 
 export default Tours;
 
-// "holder.js/100px180"
+// holder.js/100px180

@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import InquirerForm from "./inquiryForm/InquiryForm";
 import Tours from "./tour/Tour";
+import Videos from "./Videos/Video";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Main = () => {
@@ -11,6 +12,7 @@ const Main = () => {
     <div>
       <Navbar />
       <Tours />
+      <Videos />
       <InquirerForm />
       <Footer />
     </div>

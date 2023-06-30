@@ -701,7 +701,7 @@ overlay search
   width: 40px;
   height: 40px;
   margin-bottom: 5px;
-  text-align: center;
+  text-align: right;
   background: rgba(0, 0, 0, 0.05);
   display: inline-block;
   padding-top: 6px;
@@ -1214,7 +1214,7 @@ overlay search
   height: 40px;
   background: #f5f5f5;
   display: inline-block;
-  text-align: center;
+  text-align: right;
   font-weight: 600;
   padding-top: 8px;
   font-size: 14px;
@@ -1479,4 +1479,5 @@ section {
     padding-left: 0px;
   }
 }
+
 

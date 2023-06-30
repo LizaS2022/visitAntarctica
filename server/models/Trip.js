@@ -3,10 +3,6 @@ const mongoose = require("mongoose");
 const { Schema, model } = mongoose;
 
 const TripSchema = new Schema({
-  image: {
-    type: String,
-  },
-
   title: {
     type: String,
     required: true,

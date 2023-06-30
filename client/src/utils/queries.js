@@ -4,7 +4,6 @@ export const VIEW_TRIPS = gql`
   query trips {
     trips {
       id
-      image
       trip_duration
       max_voyagers
       title
@@ -16,7 +15,6 @@ export const VIEW_TRIPS = gql`
 export const VIEW_TRIP = gql`
   query trip($tripId: ID!) {
     trip(tripId: $tripId) {
-      image
       trip_duration
       max_voyagers
       title
