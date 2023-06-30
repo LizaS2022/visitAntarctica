@@ -8,7 +8,7 @@ import {
 } from "@apollo/client";
 
 import Main from "./components/Main";
-import InquirerForm from "./components/inquiryForm/InquiryForm";
+import InquirerForm from "./components/inquiryForm/Inquiry";
 import Tour from "./components/tour/Tour";
 import Video from "./components/Videos/Video";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
