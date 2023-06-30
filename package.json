@@ -2,6 +2,9 @@
   "name": "visitantarctica",
   "version": "1.0.0",
   "description": "An informative app about Antarctica that invites people to book a trip",
+  "engines": {
+    "node": "18.x"
+  },
   "main": "index.js",
   "scripts": {
     "install": "cd server && npm i && cd ../client && npm i",
