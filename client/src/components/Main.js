@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import InquirerForm from "./inquiryForm/Inquiry";
-import Tours from "./tour/Tour";
+import Tours from "./tour/TourInfo";
 import Videos from "./Videos/Video";
 import "bootstrap/dist/css/bootstrap.min.css";
 

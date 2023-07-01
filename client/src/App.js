@@ -9,7 +9,7 @@ import {
 
 import Main from "./components/Main";
 import InquirerForm from "./components/inquiryForm/Inquiry";
-import Tour from "./components/tour/Tour";
+import Tour from "./components/tour/TourInfo";
 import Video from "./components/Videos/Video";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
