@@ -1,0 +1,23 @@
+[
+    {
+      "max_voyagers": 10,
+      "title": "Epic Antarctica",
+      "trip_description":
+        "Embark on an epic 23-day journey through Antarctica's major highlights: Falkland Islands, South Georgia, the Antarctic Peninsula, and the Antarctic Circle. The trip includes encounters with diverse wildlife like albatross, dolphins, and penguins. It also includes a visit to South Georgia, home to 300,000 king penguins. The voyage offers unforgettable moments, including crossing the Antarctic Circle.",
+      "trip_duration": 7
+    },
+    {
+      "max_voyagers": 10,
+      "title": "Epic Antarctica",
+      "trip_description":
+        "Embark on an epic 23-day journey through Antarctica's major highlights: Falkland Islands, South Georgia, the Antarctic Peninsula, and the Antarctic Circle. The trip includes encounters with diverse wildlife like albatross, dolphins, and penguins. It also includes a visit to South Georgia, home to 300,000 king penguins. The voyage offers unforgettable moments, including crossing the Antarctic Circle.",
+      "trip_duration": 23
+    },
+    {
+      "max_voyagers": 10,
+      "title": "Epic Antarctica",
+      "trip_description":
+        "Embark on an epic 23-day journey through Antarctica's major highlights: Falkland Islands, South Georgia, the Antarctic Peninsula, and the Antarctic Circle. The trip includes encounters with diverse wildlife like albatross, dolphins, and penguins. It also includes a visit to South Georgia, home to 300,000 king penguins. The voyage offers unforgettable moments, including crossing the Antarctic Circle.",
+      "trip_duration": 11
+    }
+  ]
