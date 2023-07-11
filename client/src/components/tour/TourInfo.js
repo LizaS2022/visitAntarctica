@@ -37,16 +37,19 @@ const ReadMore = ({ children, maxCharacterCount = 100 }) => {
 };
 
 const Tours = () => {
-  const { loading, data } = useQuery(VIEW_TRIPS);
+  const { loading, error, data } = useQuery(VIEW_TRIPS);
   if (loading) {
     return <p>...loading</p>;
   }
   console.log(data);
+  if (error) {
+    return <div>Error! {error.message}</div>;
+  }
 
   return (
     <section>
       <div className="container">
-        <Row xs={1} md={3} className="g-4 justify-content-md-center">
+        <Row xs={1} md={2} lg={3} className="g-4 justify-content-md-center">
           {data.trips &&
             data.trips.map((trip, index) => (
               <Col key={index}>

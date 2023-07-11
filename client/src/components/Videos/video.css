@@ -1,3 +1,10 @@
 .video-frame {
     margin: 1.0rem;
 }
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
