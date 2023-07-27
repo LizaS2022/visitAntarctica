@@ -16,5 +16,30 @@
     "title": "Epic Antarctica",
     "trip_description": "Embark on an epic 23-day journey through Antarctica's major highlights: Falkland Islands, South Georgia, the Antarctic Peninsula, and the Antarctic Circle. The trip includes encounters with diverse wildlife like albatross, dolphins, and penguins. It also includes a visit to South Georgia, home to 300,000 king penguins. The voyage offers unforgettable moments, including crossing the Antarctic Circle.",
     "trip_duration": 11
+  },
+  {
+    "max_voyagers": 10,
+    "title": "Antarctica and South Georgia Explorer",
+    "trip_description": "This 20-day adventure combines the untouched wilderness of Antarctica with the wildlife paradise of South Georgia. You'll have the chance to witness enormous colonies of penguins, encounter various species of whales, and hike on glaciers. This tour includes round-trip flights from Buenos Aires to Ushuaia, onboard accommodation with daily housekeeping, all meals, and beverages on board, and Zodiac excursions with our expert expedition team.",
+    "trip_duration": 20
+  },
+  {
+    "max_voyagers": 10,
+    "title": "Fly and Cruise Antarctica",
+    "trip_description": "An 8-day express trip for those who want to experience the Antarctic without spending too much time at sea. Fly from Punta Arenas, Chile, to King George Island in the South Shetlands, avoiding the infamous Drake Passage, and then board our expedition ship to explore the white continent. Experience otherworldly landscapes, incredible wildlife, and visit research stations to learn about the environment and conservation efforts.",
+    "trip_duration": 8
+  },
+  {
+    "max_voyagers": 10,
+    "title": "White Christmas in Antarctica",
+    "trip_description": "Make your festive season truly magical with a 12-day Christmas trip to Antarctica. Spend Christmas Day surrounded by snow-clad mountains, icebergs, and an abundance of wildlife. Aside from the daily excursions on land and along the shore, you'll enjoy a festive feast prepared by onboard chefs and a special Christmas program.",
+    "trip_duration": 12
+  },
+  {
+    "max_voyagers": 10,
+    "title": "South Pole Adventure - Ski the Last Degree",
+    "trip_description": "For the ultimate thrill-seekers and seasoned adventurers, this 17-day expedition will challenge you to ski the last degree to the South Pole. The journey begins with a flight from Punta Arenas to Antarctica's Union Glacier camp. From there, you'll ski roughly 60 nautical miles, carrying a sled with your provisions, navigating crevasses and ice waves, all under the ethereal Antarctic light. Upon reaching the South Pole, you'll have a chance to explore the Amundsen-Scott South Pole Station before flying back to the base camp. This physically demanding adventure is a once-in-a-lifetime opportunity to follow in the steps of the great polar explorers.",
+    "trip_duration": 17
   }
+  
 ]

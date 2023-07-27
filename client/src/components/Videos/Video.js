@@ -4,7 +4,7 @@ import "./video.css";
 
 const DisplayVideos = () => {
   return (
-    <section>
+    <section id="videos">
       <div className="container align-center video-container">
         <iframe
           className="video-frame"

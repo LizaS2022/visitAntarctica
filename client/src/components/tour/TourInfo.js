@@ -47,7 +47,7 @@ const Tours = () => {
   }
 
   return (
-    <section>
+    <section id="trips">
       <div className="container">
         <Row xs={1} md={2} lg={3} className="g-4 justify-content-md-center">
           {data.trips &&

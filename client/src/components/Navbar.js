@@ -1,5 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+
+const styles = {
+  navItem: {
+    cursor: "pointer",
+  },
+};
 
 const Navbar = () => {
   return (
@@ -35,24 +42,55 @@ const Navbar = () => {
                 {" "}
                 {/* The class 'ml-auto' pushes the ul to the right side */}
                 <li className="nav-item active">
-                  <Link className="nav-link" to="/">
+                  <ScrollLink
+                    className="nav-link"
+                    to="/home"
+                    spy={true}
+                    smooth={-70}
+                    duration={500}
+                    style={styles.navItem}
+                  >
                     Home
-                  </Link>
+                  </ScrollLink>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/about">
+                  <ScrollLink
+                    className="nav-link"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    style={styles.navItem}
+                  >
                     About
-                  </Link>
+                  </ScrollLink>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/trips">
+                  <ScrollLink
+                    className="nav-link"
+                    to="trips"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    style={styles.navItem}
+                  >
                     Trips
-                  </Link>
+                  </ScrollLink>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/contact">
+                  <ScrollLink
+                    className="nav-link"
+                    to="contact-form"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    style={styles.navItem}
+                  >
                     Contact
-                  </Link>
+                  </ScrollLink>
                 </li>
               </ul>
             </div>
