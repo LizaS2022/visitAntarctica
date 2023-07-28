@@ -24,7 +24,7 @@ const Navbar = () => {
               to="/"
             >
               <i className="mr-2 " />
-              VisitToAntarctica
+              VisitAntarctica
             </Link>
             <button
               className="navbar-toggler"
@@ -56,7 +56,7 @@ const Navbar = () => {
                 <li className="nav-item">
                   <ScrollLink
                     className="nav-link"
-                    to="about"
+                    to="AboutUs"
                     spy={true}
                     smooth={true}
                     offset={-70}

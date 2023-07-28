@@ -61,7 +61,12 @@ const InquirerForm = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <img src={iceberg} alt="" className="img-fluid w-100" />
+            <img
+              src={iceberg}
+              alt=""
+              className="img-fluid w-100"
+              style={{ height: "600px", objectFit: "cover" }}
+            />
           </div>
         </div>
         <div className="row justify-content-center">

@@ -40,6 +40,18 @@
     "title": "South Pole Adventure - Ski the Last Degree",
     "trip_description": "For the ultimate thrill-seekers and seasoned adventurers, this 17-day expedition will challenge you to ski the last degree to the South Pole. The journey begins with a flight from Punta Arenas to Antarctica's Union Glacier camp. From there, you'll ski roughly 60 nautical miles, carrying a sled with your provisions, navigating crevasses and ice waves, all under the ethereal Antarctic light. Upon reaching the South Pole, you'll have a chance to explore the Amundsen-Scott South Pole Station before flying back to the base camp. This physically demanding adventure is a once-in-a-lifetime opportunity to follow in the steps of the great polar explorers.",
     "trip_duration": 17
+  },
+  {
+    "max_voyagers": 10,
+    "title": "The Great Antarctic Expedition",
+    "trip_description": "Embark on a 20-day adventure of a lifetime that will take you through the heart of the Antarctic Peninsula. This trip is the perfect blend of stunning landscapes, rich wildlife, and history. As you cruise through iceberg-strewn waters, witness vast colonies of penguins, seals basking on ice floes, and whales breaching the icy waters. You will also visit historical sites like the Yalour Islands and the renowned Port Lockroy, a former British research station turned museum. In addition to this, there will be expert-led lectures on the environment, wildlife, and history of Antarctica. Join us for an unparalleled polar experience!",
+    "trip_duration": 20
+  },
+  {
+    "max_voyagers": 10,
+    "title": "South Pole Adventure - Ski the Last Degree",
+    "trip_description": "This 15-day expedition is designed for those who wish to explore Antarctica in-depth. Start your journey in Ushuaia, Argentina, the southernmost city in the world, and then cross the infamous Drake Passage. Experience the magic of seeing the Antarctic Peninsula for the first time with towering icebergs and icy waters as far as the eye can see. You'll get the opportunity to go on Zodiac excursions to spot various wildlife, including several species of penguins, seals, and whales. In addition to wildlife viewing, you'll have the chance to go kayaking, snowshoeing, or hiking. This trip also includes a visit to Deception Island, an active volcano which is home to an abandoned whaling station, and Paradise Bay, known for its stunning glacier views. It's not just a trip, it's an exploration journey filled with adventures, unforgettable experiences, and the raw beauty of Antarctica.",
+    "trip_duration": 15
   }
   
 ]

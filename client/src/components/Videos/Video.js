@@ -8,8 +8,8 @@ const DisplayVideos = () => {
       <div className="container align-center video-container">
         <iframe
           className="video-frame"
-          width="340"
-          height="220"
+          width="370"
+          height="240"
           src="https://www.youtube.com/embed/ImwrzOAXpk8"
           title="YouTube video player"
           frameborder="0"
@@ -18,8 +18,8 @@ const DisplayVideos = () => {
         ></iframe>
         <iframe
           className="video-frame"
-          width="340"
-          height="220"
+          width="370"
+          height="240"
           src="https://www.youtube.com/embed/TiXOQn7z9Hg"
           title="YouTube video player"
           frameborder="0"
@@ -28,8 +28,8 @@ const DisplayVideos = () => {
         ></iframe>
         <iframe
           className="video-frame"
-          width="340"
-          height="220"
+          width="370"
+          height="240"
           src="https://www.youtube.com/embed/t57DPnH06V0"
           title="YouTube video player"
           frameborder="0"
@@ -38,8 +38,8 @@ const DisplayVideos = () => {
         ></iframe>
         <iframe
           className="video-frame"
-          width="340"
-          height="220"
+          width="370"
+          height="240"
           src="https://www.youtube.com/embed/shF-ZscudbU"
           title="YouTube video player"
           frameborder="0"

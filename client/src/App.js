@@ -11,6 +11,7 @@ import Main from "./components/Main";
 import InquirerForm from "./components/inquiryForm/Inquiry";
 import Tour from "./components/tour/TourInfo";
 import Video from "./components/Videos/Video";
+import AboutUs from "./components/About/about";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const httpLink = createHttpLink({
@@ -28,6 +29,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/about" element={<AboutUs />} />
           <Route path="/tour" element={<Tour />} />
           <Route path="/video" element={<Video />} />
           <Route path="/contact" element={<InquirerForm />} />

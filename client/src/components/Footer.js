@@ -98,8 +98,7 @@ const Footer = () => {
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <div className="copyright text-center ">
-                @ copyright all reserved to{" "}
-                <Link to="https://themefisher.com/">themefisher.com</Link>-2019
+                @ copyright all reserved to visitAntarctica INC-2019
               </div>
             </div>
           </div>

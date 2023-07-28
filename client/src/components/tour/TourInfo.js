@@ -11,8 +11,25 @@ import "./tour.css";
 import boat from "../../images/boat.jpg";
 import crossing from "../../images/crossing.jpg";
 import epic from "../../images/epic.jpg";
+import whale from "../../images/whale.jpg";
+import pinguin from "../../images/pinguin.jpg";
+import antarctic1 from "../../images/antarctica1.jpg";
+import antarctica3 from "../../images/antarctic3.jpg";
+import chilling from "../../images/chilling.jpg";
+import nature from "../../images/nature.jpg";
+import { Link as ScrollLink } from "react-scroll";
 
-const images = [boat, crossing, epic];
+const images = [
+  boat,
+  crossing,
+  epic,
+  whale,
+  pinguin,
+  antarctic1,
+  antarctica3,
+  chilling,
+  nature,
+];
 
 const ReadMore = ({ children, maxCharacterCount = 100 }) => {
   const text = children;
@@ -22,6 +39,8 @@ const ReadMore = ({ children, maxCharacterCount = 100 }) => {
   function toggleIsTruncated() {
     setIsTruncated(!isTrunctated);
   }
+
+  const handleSubmitButton = (event) => {};
 
   return (
     <p>
@@ -47,41 +66,53 @@ const Tours = () => {
   }
 
   return (
-    <section id="trips">
-      <div className="container">
-        <Row xs={1} md={2} lg={3} className="g-4 justify-content-md-center">
-          {data.trips &&
-            data.trips.map((trip, index) => (
-              <Col key={index}>
-                <Card
-                  className="mx-auto"
-                  style={{ width: "18rem", minHeight: "40rem" }}
-                >
-                  <Card.Img
-                    className="card-img"
-                    variant="top"
-                    src={images[index]}
-                  />
-                  <Card.Body>
-                    <div className="d-flex justify-content-between">
-                      <Card.Title>{trip.title}</Card.Title>
-                      <span>{trip.trip_duration} days</span>
-                    </div>
-                    <Card.Text>
-                      <ReadMore maxCharacterCount={100}>
-                        {trip.trip_description}
-                      </ReadMore>
-                    </Card.Text>
-                    <div className="d-flex justify-content-between">
-                      <Button variant="primary">Book Now</Button>
-                    </div>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
-        </Row>
-      </div>
-    </section>
+    <>
+      <section id="trips">
+        <div className="container">
+          <Row xs={1} md={2} lg={3} className="g-4 justify-content-md-center">
+            {data.trips &&
+              data.trips.map((trip, index) => (
+                <Col key={index}>
+                  <Card
+                    className="mx-auto"
+                    style={{ width: "20.5rem", minHeight: "40rem" }}
+                  >
+                    <Card.Img
+                      className="card-img"
+                      variant="top"
+                      src={images[index]}
+                    />
+                    <Card.Body>
+                      <div className="d-flex justify-content-between">
+                        <Card.Title>{trip.title}</Card.Title>
+                        <span>{trip.trip_duration} days</span>
+                      </div>
+                      <Card.Text>
+                        <ReadMore maxCharacterCount={100}>
+                          {trip.trip_description}
+                        </ReadMore>
+                      </Card.Text>
+                      <div className="d-flex justify-content-between">
+                        <ScrollLink
+                          className="nav-link"
+                          to="contact-form" // Use the same unique value used in the Element component
+                          spy={true}
+                          smooth={true}
+                          offset={-70}
+                          duration={500}
+                          style={{ color: "white" }}
+                        >
+                          <Button variant="primary">Contact Us</Button>
+                        </ScrollLink>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
+          </Row>
+        </div>
+      </section>
+    </>
   );
 };
 
